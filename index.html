@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafeneaua — Gust bun. Momente frumoase.</title>
+  <meta name="description" content="Cafeneaua — Gust bun. Momente frumoase. Cafea de specialitate, preparate proaspete și atmosferă caldă." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top">
+        <span class="brand-mark">☕</span>
+        <span class="brand-name">Cafeneaua</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Deschide meniul" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#despre">Despre</a></li>
+        <li><a href="#meniu">Meniu</a></li>
+        <li><a href="#cafea">Cafea</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#contact" class="btn btn-nav">Rezervă</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('assets/img/hero.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="eyebrow">Bun venit la Cafeneaua</p>
+      <h1 class="hero-title">Gust bun.<br /><em>Momente frumoase.</em></h1>
+      <p class="hero-sub">Cafea de specialitate prăjită proaspăt, preparate sănătoase și o atmosferă în care vrei să rămâi.</p>
+      <div class="hero-actions">
+        <a href="#meniu" class="btn btn-primary">Vezi meniul</a>
+        <a href="#contact" class="btn btn-ghost">Rezervă o masă</a>
+      </div>
+    </div>
+    <a class="scroll-hint" href="#despre" aria-label="Derulează mai jos">↓</a>
+  </section>
+
+  <main>
+    <!-- Despre -->
+    <section class="section" id="despre">
+      <div class="container about">
+        <div class="about-media">
+          <img src="assets/img/cafe.jpg" alt="Interiorul Cafenelei" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">Despre noi</p>
+          <h2>Un colț liniștit în inima orașului</h2>
+          <p>La Cafeneaua, fiecare detalie este gândită ca tu să te simți ca acasă. Boabele de cafea sunt prăjite local, iar aluatul și sosurile sunt pregătite zilnic, în bucătăria noastră.</p>
+          <p>Fie că vii pentru un espresso de dimineață, o prânz lent cu prietenii sau o latte-art la ore de după-amiază — te așteptăm cu aceeași căldură de fiecare dată.</p>
+          <ul class="about-stats">
+            <li><strong>100%</strong><span>Cafea de specialitate</span></li>
+            <li><strong>Zilnic</strong><span>Ingrediente proaspete</span></li>
+            <li><strong>4.9★</strong><span>Recenzii oaspeți</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meniu -->
+    <section class="section section-alt" id="meniu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Meniul nostru</p>
+          <h2>Gust bun în fiecare farfurie</h2>
+          <p class="section-lead">O selecție atentă de preparate, gătite cu ingrediente de sezon și servite cu zâmbetul nostru.</p>
+        </div>
+
+        <div class="menu-filters" role="tablist" aria-label="Filtre meniu">
+          <button class="chip is-active" data-filter="all">Toate</button>
+          <button class="chip" data-filter="mic-dejun">Mic dejun</button>
+          <button class="chip" data-filter="principal">Fel principal</button>
+          <button class="chip" data-filter="desert">Desert</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="dish" data-cat="principal">
+            <div class="dish-img"><img src="assets/img/bruschetta.jpg" alt="Bruschette" loading="lazy" /></div>
+            <div class="dish-body">
+              <div class="dish-head"><h3>Bruschette</h3><span class="price">28 lei</span></div>
+              <p>Pâine prăjită, roșii cherry, busuioc proaspăt și ulei de măsline.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-cat="principal">
+            <div class="dish-img"><img src="assets/img/burger.jpg" alt="Burger de casă" loading="lazy" /></div>
+            <div class="dish-body">
+              <div class="dish-head"><h3>Burger de casă</h3><span class="price">45 lei</span></div>
+              <p>Carne Angus, cheddar maturat, sos de casă și cartofi prăjiți.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-cat="principal">
+            <div class="dish-img"><img src="assets/img/pasta.jpg" alt="Paste cremoase" loading="lazy" /></div>
+            <div class="dish-body">
+              <div class="dish-head"><h3>Paste cremoase</h3><span class="price">42 lei</span></div>
+              <p>Paste frese, sos cremos, usturoi confit și parmezan.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-cat="principal">
+            <div class="dish-img"><img src="assets/img/pizza.jpg" alt="Pizza artizanală" loading="lazy" /></div>
+            <div class="dish-body">
+              <div class="dish-head"><h3>Pizza artizanală</h3><span class="price">40 lei</span></div>
+              <p>Aluat dospit 48h, mozzarella di bufala și roșii San Marzano.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-cat="mic-dejun">
+            <div class="dish-img"><img src="assets/img/salad.jpg" alt="Salată proaspătă" loading="lazy" /></div>
+            <div class="dish-body">
+              <div class="dish-head"><h3>Salată proaspătă</h3><span class="price">32 lei</span></div>
+              <p>Verdeturi de sezon, avocado, semințe și dressing de lămâie.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-cat="mic-dejun">
+            <div class="dish-img"><img src="assets/img/soup.jpg" alt="Supă de sezon" loading="lazy" /></div>
+            <div class="dish-body">
+              <div class="dish-head"><h3>Supă de sezon</h3><span class="price">24 lei</span></div>
+              <p>Supă cremă de legume, servită cu pâine prăjită cu unt.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-cat="desert">
+            <div class="dish-img"><img src="assets/img/dessert.jpg" alt="Desert dulce" loading="lazy" /></div>
+            <div class="dish-body">
+              <div class="dish-head"><h3>Desert dulce</h3><span class="price">26 lei</span></div>
+              <p>Prajitura casei, acompaniată de o cafea la alegere.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-cat="mic-dejun">
+            <div class="dish-img"><img src="assets/img/coffee.jpg" alt="Cafea de specialitate" loading="lazy" /></div>
+            <div class="dish-body">
+              <div class="dish-head"><h3>Cafea de specialitate</h3><span class="price">16 lei</span></div>
+              <p>Espresso, cappuccino sau latte — boabe prăjite proaspăt.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cafea -->
+    <section class="section feature" id="cafea">
+      <div class="container feature-grid">
+        <div class="feature-text">
+          <p class="eyebrow">Cafeaua noastră</p>
+          <h2>De la bob la ceașcă</h2>
+          <p>Colaborăm cu prăjitori locali și calibram fiecare espresso de două ori pe zi. Rezultatul? O cafea echilibrată, cu corp plin și aromă curată.</p>
+          <ul class="checks">
+            <li>Boabe prăjite local, măcinate la comandă</li>
+            <li>Alternative de lapte vegetal</li>
+            <li>Metode de preparare: espresso, V60, Aeropress</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Vino să o încerci</a>
+        </div>
+        <div class="feature-media">
+          <img src="assets/img/coffee.jpg" alt="Cafea de specialitate" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Galerie -->
+    <section class="section section-alt" id="galerie">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Galerie</p>
+          <h2>Atmosfera Cafenelei</h2>
+          <p class="section-lead">Imagini din locul nostru și din preparatele pe care le pregătim cu drag.</p>
+        </div>
+        <div class="gallery">
+          <a href="assets/img/cafe.jpg" class="g-item g-tall"><img src="assets/img/cafe.jpg" alt="Interior" loading="lazy" /></a>
+          <a href="assets/img/hero.jpg" class="g-item g-wide"><img src="assets/img/hero.jpg" alt="Cafenea" loading="lazy" /></a>
+          <a href="assets/img/coffee.jpg" class="g-item"><img src="assets/img/coffee.jpg" alt="Cafea" loading="lazy" /></a>
+          <a href="assets/img/burger.jpg" class="g-item"><img src="assets/img/burger.jpg" alt="Burger" loading="lazy" /></a>
+          <a href="assets/img/pasta.jpg" class="g-item"><img src="assets/img/pasta.jpg" alt="Paste" loading="lazy" /></a>
+          <a href="assets/img/pizza.jpg" class="g-item"><img src="assets/img/pizza.jpg" alt="Pizza" loading="lazy" /></a>
+          <a href="assets/img/dessert.jpg" class="g-item"><img src="assets/img/dessert.jpg" alt="Desert" loading="lazy" /></a>
+          <a href="assets/img/salad.jpg" class="g-item"><img src="assets/img/salad.jpg" alt="Salată" loading="lazy" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Rezervă o masă</h2>
+          <p>Completează formularul și îți confirmăm rezervarea în scurt timp. Pentru grupuri mari, sună-ne direct.</p>
+          <ul class="contact-list">
+            <li><span class="ci">📍</span><div><strong>Adresă</strong><br />Strada Espresso 12, București</div></li>
+            <li><span class="ci">📞</span><div><strong>Telefon</strong><br /><a href="tel:+40123456789">+40 123 456 789</a></div></li>
+            <li><span class="ci">✉️</span><div><strong>Email</strong><br /><a href="mailto:salut@cafeneaua.ro">salut@cafeneaua.ro</a></div></li>
+            <li><span class="ci">🕒</span><div><strong>Program</strong><br />Luni – Duminicu: 08:00 – 22:00</div></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="reserveForm" novalidate>
+          <div class="field">
+            <label for="name">Nume</label>
+            <input id="name" name="name" type="text" placeholder="Numele tău" required />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@email.com" required />
+            </div>
+            <div class="field">
+              <label for="phone">Telefon</label>
+              <input id="phone" name="phone" type="tel" placeholder="Opțional" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Data</label>
+              <input id="date" name="date" type="date" required />
+            </div>
+            <div class="field">
+              <label for="people">Persoane</label>
+              <select id="people" name="people">
+                <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Mesaj</label>
+            <textarea id="message" name="message" rows="3" placeholder="Detalii suplimentare..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Trimite rezervarea</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="#top">
+          <span class="brand-mark">☕</span>
+          <span class="brand-name">Cafeneaua</span>
+        </a>
+        <p class="footer-tag">Gust bun. Momente frumoase.</p>
+      </div>
+      <nav class="footer-links" aria-label="Linkuri footer">
+        <a href="#despre">Despre</a>
+        <a href="#meniu">Meniu</a>
+        <a href="#cafea">Cafea</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Cafeneaua. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

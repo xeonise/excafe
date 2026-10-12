@@ -1,0 +1,9 @@
+# Ignore the original saved preview files (not part of the site)
+Cafeneaua*.html
+Cafeneaua Example*/
+*_files/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
